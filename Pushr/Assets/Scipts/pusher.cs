@@ -13,7 +13,7 @@ public class Pusher : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         float z = Mathf.Sin(Time.time * speed) * maxZ + offset;
         Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, z);
